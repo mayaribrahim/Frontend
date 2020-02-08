@@ -39,13 +39,13 @@ header {
 }
 
 .server {
-    width: 70%;
-    margin: 2em auto 2em 25%;
+    width: 60%;
+    margin: 1em auto 2em 24%;
 }
 
 h1, .subhead {
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .subhead {
@@ -57,13 +57,146 @@ h1, .subhead {
     background: #00C2FF;
     color: white;
     padding: 2em 0 0;
+    margin-top: 5%;
     border-top-left-radius: 15%;
-    transform:skewY();
+    transform:skewY(-2deg);
+    
 }
 
-@media (max-width: 500px) {
-    .hide-desktop {
+.blue-container::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    background-color: #00C2FF;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+
+.blue-container::after{
+     content: "";
+     width: 80px;
+     height: 80px;
+     position: absolute;
+     background-color: white;
+     top: -80px;
+     right: 0;
+     border-radius: 50%;
+
+}
+
+
+
+.blue-container ul li{
+   margin-bottom: 3em;
+}
+
+.blue-container ul p{
+    padding: 0 .2em;
+}
+
+.blue-container ul img{
+    width: 8%;
+}
+
+.blue-container ul li:nth-child(3) img{
+    width: 6%;
+
+}
+
+.gray-container{
+    background-color: #f6f6f6;
+    margin-top: -1.5%;
+    padding-top: 2em;
+}
+
+.gray-container ul li:first-child{
+    margin-bottom: 2em;
+}
+
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+figcaption{
+    font-weight: bold;
+    color: #00C2FF;
+}
+
+.cta{
+    background-color:#00cc80;
+    display:block;
+    border-radius: 20em;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    position: relative;
+    z-index: 5;
+    
+
+}
+
+.darkgray-container{
+    background-color: #3d444a;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+    padding-top: 2% ;
+    padding-bottom: 2%;
+    
+    
+}
+
+.darkgray-container .container{
+    transform: skewY(-2deg);
+}
+
+.darkgray-container::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+    position: absolute;
+    background-color: #3d444a;
+    
+}
+
+
+.darkgray-container::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    top: -80px;
+    left: 0;
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    
+}
+
+ul.links li{
+    display: inline-block;
+}
+
+ul.links li a{
+    color: #9d9d9d;
+}
+
+@media screen and (max-width:500px){
+    .hide-desktop{
         visibility: hidden;
-        
     }
 }
+
+
